@@ -1,0 +1,224 @@
+/* Посилання на наслідують колір,
+Кнопки та елементи форми не наслідують шрифт.
+Всі Н (від 1...6) наслідують від body жирність 700.
+Всі текстові атрибути наслідують від body жирність 400. 
+ */
+/* --------Налаштування для всього документа-------- */
+:root {
+--accent-color: #2196F3;
+--primary-text-color: #212121;
+--secondary-text-color: #757575;
+--first-background-color: #FFFFFF;
+--second-background-color: #2F303A;
+--btn-text-color: #FFFFFF;
+--btn-background-color: #2196F3;
+--btn-default-background-color: #F5F4FA 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3%;
+
+    background-color: var(--first-background-color);
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+
+    color: var(--primary-text-color);
+}
+
+/* --------Header-------- */
+.nav-logo {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+leading-trim: NONE;
+line-height: 1;
+
+color: var(--accent-color);
+}
+
+.nav-logo span {
+color: #000000
+}
+
+.header-link, 
+.adress-nav .link {
+font-weight: 500;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 1;
+letter-spacing: 2%;
+}
+
+.adress-nav .link {
+color: var(--secondary-text-color);
+}
+
+.header-link:hover,
+.header-link:focus, 
+.adress-nav .link:hover, 
+.adress-nav .link:focus {     
+color: var(--accent-color);
+}
+
+/* --------Hero-------- */
+.hero {
+    background-color: var(--second-background-color);
+}
+
+.hero-title {
+font-weight: 900;
+font-size: 44px;
+leading-trim: NONE;
+line-height: 1.36;
+letter-spacing: 6%;
+text-align: center;
+text-transform: uppercase;
+
+color: var(--first-background-color)
+}
+
+.button {
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 1.87;
+letter-spacing: 6%;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+
+color: var(--btn-text-color);
+background-color: var(--btn-background-color);
+}
+
+.button:hover,
+.button:focus {
+background-color: #188CE8;
+}
+
+/* --------Advantages-------- */
+/* .section-title {
+font-size: 36px;
+leading-trim: NONE;
+line-height: 1;
+text-align: center;   
+} */
+
+.advantages-title {
+font-size: 14px;
+leading-trim: NONE;
+line-height: 1;
+text-transform: uppercase;
+}
+
+.advantages-after-title {
+font-size: 14px;
+leading-trim: NONE;
+line-height: 1.71;
+
+color: var(--secondary-text-color);
+}
+
+/* --------Team--------*/
+.team-title {
+font-weight: 500;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 1;
+text-align: center;
+}
+
+.team-after-title {
+font-size: 16px;
+leading-trim: NONE;
+line-height: 1;
+text-align: center;
+
+color: var(--secondary-text-color);
+}
+
+
+/* --------Portfolio-------- */
+
+.filter-button {
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 1.62;
+text-align: center;
+cursor: pointer;
+}
+
+.filter-button:default {
+ color: var(--primary-text-color);
+ background-color: var(--btn-default-background-color) ;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--btn-text-color);
+    background-color: var(--btn-background-color);
+}
+
+.portfolio-title {
+font-size: 18px;
+leading-trim: NONE;
+line-height: 2;
+letter-spacing: 6%;
+}
+
+.portfolio-after-title {
+font-size: 16px;
+leading-trim: NONE;
+line-height: 1.87;
+
+color: var(--secondary-text-color);
+}
+
+/* --------Footer-------- */
+.ftr-logo {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+leading-trim: NONE;
+line-height: 1;
+
+color: var(--accent-color);
+}
+
+.ftr-logo span {
+color: var(--first-background-color)
+}
+
+.address {
+    font-style: normal;
+
+    background-color: var(--second-background-color);
+    
+}
+
+.link-map, 
+.link-mail, 
+.link-tel {
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 1.71;
+}
+
+.link-map {
+color: var(--first-background-color);
+}
+
+.link-mail, .link-tel {
+color: #FFFFFF99;
+} 
